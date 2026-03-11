@@ -331,11 +331,14 @@ nav {
 	align-items: center;
 	justify-content: center;
 	margin-top: 4.5rem;
+	box-sizing: border-box;
 }
 
 #demo_video {
 	width: 100%;
+	height: 100%;
 	max-width: 680px;
+	border: none;
 	object-fit: cover;
 }
 
