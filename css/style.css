@@ -621,7 +621,6 @@ nav {
 .contact_section {
 	display: flex;
 	flex-direction: column;
-	gap: 0.3rem;
 
 	margin-bottom: 5rem;
 }
@@ -639,7 +638,7 @@ nav {
 .message_main {
 	display: flex;
 	align-items: center;
-	min-height: 75vh;
+	min-height: 60vh;
 	gap: 5rem;
 }
 
