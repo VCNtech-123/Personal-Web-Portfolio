@@ -390,6 +390,8 @@ nav {
 }
 
 #view_all {
+	display: flex;
+	justify-content: center;
 	transform: translateY(-15px);
 }
 
