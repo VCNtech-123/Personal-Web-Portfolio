@@ -12,9 +12,18 @@ projects.forEach((project) => {
     projectFlex.appendChild(proj);
 })
 
-const projectCards = document.querySelectorAll('.project_column');
-
+const projectTitle = document.querySelectorAll('.project_head');
 const searchInput = document.getElementById('search_input');
 
-/* searchInput.addEventListener('input', (searchTerm) => {
-    const searchTerm = searchInput.value.toLowerCase(); */
+searchInput.addEventListener('input', () => {
+    const searchTerm = searchInput.value.toLowerCase();
+
+    projectTitle.forEach((title) => {
+        const titleText = title.textContent.toLowerCase();
+        if (titleText.includes(searchTerm)) {
+            title.parentElement.style.display = 'flex';
+        } else {
+            title.parentElement.style.display = 'none';
+        }
+    }) 
+})

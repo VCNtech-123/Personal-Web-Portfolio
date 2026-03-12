@@ -1,5 +1,4 @@
 
-
 export class Project {
 
     constructor(gitUrl, imgUrl, gitCode, title, tags, description) {

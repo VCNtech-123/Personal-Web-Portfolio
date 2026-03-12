@@ -368,7 +368,7 @@ nav {
 	display: flex;
 	flex-direction: column;
 	gap: 0.8rem;
-	margin-bottom: 6rem;
+	margin-bottom: 5rem;
 }
 
 #project_heading {
@@ -420,6 +420,12 @@ nav {
 	border-color: rgba(36, 48, 65, 1.0);
 	border-radius: 10px;
 	transition: all 0.3s ease
+}
+
+.featured_project > a {
+    display: contents; 
+    text-decoration: none;
+    color: inherit;
 }
 
 .featured_project:hover{
@@ -523,6 +529,7 @@ nav {
 
 #more_header {
 	font-size: 30px;
+	margin-bottom: 1rem;
 }
 
 .project_row {
