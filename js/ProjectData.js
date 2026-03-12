@@ -42,7 +42,6 @@ const projectFive = new Project("https://vcntech-123.github.io/Personal-Web-Port
     "A minimalist tool for searching and exploring comprehensive global country data."
     );
    
-
   export const projects = [projectOne, projectTwo, projectThree, projectFour, projectFive];
 
 
