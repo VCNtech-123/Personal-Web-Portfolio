@@ -1,4 +1,5 @@
 
+//Show Animation Up when scrolled
 const observer = new IntersectionObserver ((entries) => {
     entries.forEach(entry => {
         if (entry.isIntersecting){
@@ -19,7 +20,7 @@ console.log(hidden);
 
 
 
-
+//Navigation
 const home = document.getElementById('home_btn');
 const projects = document.getElementById('project_btn');
 const contact = document.getElementById('contact_btn');
@@ -49,3 +50,15 @@ const hover = new IntersectionObserver ((navigation) => {
 navs.forEach((cur) => {
     hover.observe(cur);
 })
+
+
+//Typing Effect
+const heroName = document.getElementById('hero_name');
+const nameAnimation = 'John Francis Vecina';
+heroName.innerHTML = '';
+let i = 0; 
+
+setInterval(() => {
+    heroName.textContent = nameAnimation.slice(0, i + 1);
+    i++
+}, 200)
