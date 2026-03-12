@@ -379,14 +379,18 @@ nav {
 	align-items: baseline;
 }
 
-#view_all {
+#view_all a{
 	font-size: 20px;
 	padding: 1rem;
 	color: rgba(243,244,246,0.70);
+	text-decoration: none;
 
-	transform: translateY(-20px);
 	transition: all 0.3s ease-in-out;
 	cursor: pointer;
+}
+
+#view_all {
+	transform: translateY(-15px);
 }
 
 #view_all:hover {
