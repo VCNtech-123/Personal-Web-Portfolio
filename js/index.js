@@ -19,7 +19,6 @@ hidden.forEach((cur) => {
 console.log(hidden);
 
 
-
 //Navigation
 const home = document.getElementById('home_btn');
 const projects = document.getElementById('project_btn');
@@ -61,4 +60,7 @@ let i = 0;
 setInterval(() => {
     heroName.textContent = nameAnimation.slice(0, i + 1);
     i++
-}, 200)
+}, 150);
+
+
+
