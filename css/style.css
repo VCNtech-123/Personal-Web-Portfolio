@@ -419,8 +419,8 @@ nav {
 }
 
 .skill_logo {
-	max-width: 20px;
-	max-height: 20px;
+	max-width: 16px;
+	max-height: 16px;
 	/* object-fit: cover; */
 }
 
@@ -849,7 +849,8 @@ nav {
 
 #search_icon {
 	color: rgba(156, 162, 175, 1);
-	width: 1.5rem;
+	width: 1.3rem;
+	transform: translateX(-50px);
 }
 
 .project_page_column {
@@ -903,9 +904,44 @@ nav {
 	width: 115px;
 }
 
+/* Footer */
+.footer {
+	margin: 4rem 0 0 0;
+	padding: 2rem 0 3rem 0;
+	text-align: center;
 
+	border-style: solid;
+	border-top-width: 1px;
+	border-left-width: 0px;
+	border-right-width: 0px;
+	border-bottom-width: 0px;
+	border-color: rgba(34, 197, 94, 0.18);
 
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+}
 
+.footer_name {
+	color: rgba(243, 244, 246, 1);
+	font-size: 26px;
+}
+
+.footer_desc {
+	color: rgba(156, 163, 175, 0.85);
+	margin-bottom: 1rem;
+	font-size: 16px;
+	font-weight: 600;
+}
+
+.copyright {
+	color: rgba(34, 197, 94, 0.75);
+	font-size: 14px;
+}
+
+.next_line {
+	display: block;
+}
 
 
 

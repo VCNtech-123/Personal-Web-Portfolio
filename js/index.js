@@ -30,7 +30,7 @@ const hover = new IntersectionObserver ((navigation) => {
         if (entry.isIntersecting) home.classList.add('active');
         else home.classList.remove('active'); }
     })
-}, {threshold: 0.3})
+})
 
 navs.forEach((cur) => {
     hover.observe(cur);

@@ -12,6 +12,7 @@ projects.forEach((project) => {
     projectFlex.appendChild(proj);
 })
 
+// My Search Function
 const projectTitle = document.querySelectorAll('.project_head');
 const searchInput = document.getElementById('search_input');
 
@@ -40,9 +41,10 @@ const hover = new IntersectionObserver ((navigation) => {
         if (entry.isIntersecting) project.classList.add('active');
         else project.classList.remove('active'); }
     })
-}, {threshold: 0.3})
+})
 
 navs.forEach((cur) => {
     hover.observe(cur);
 })
 
+// Filter Project
