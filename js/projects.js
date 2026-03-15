@@ -38,7 +38,7 @@ const hover = new IntersectionObserver ((navigation) => {
     navigation.forEach((entry) => {
         if (entry.target === projectPage) {
         if (entry.isIntersecting) project.classList.add('active');
-        else projects.classList.remove('active'); }
+        else project.classList.remove('active'); }
     })
 }, {threshold: 0.3})
 

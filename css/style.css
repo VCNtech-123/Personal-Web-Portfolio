@@ -378,7 +378,7 @@ nav {
 }
 
 #skill_heading {
-	font-size: 40px;
+	font-size: 50px;
 	margin-bottom: -50px;
 }
 
@@ -897,6 +897,10 @@ nav {
 
 .btn_js {
 	margin-left: 1rem;
+}
+
+.get_btn {
+	width: 115px;
 }
 
 

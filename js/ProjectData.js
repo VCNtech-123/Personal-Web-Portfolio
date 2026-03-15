@@ -5,7 +5,7 @@ const projectOne = new Project("https://vcntech-123.github.io/Origami/",
     "assets/images/projects/origami.png", 
     'https://github.com/VCNtech-123/Origami',
     "Origami Website", 
-    ["HTML", "CSS", "JavaScript"],
+    ["HTML", "CSS", "Bootstrap"],
     "Origami-themed landing page with responsive layout, grid system, and clean component structure."
     );
 
@@ -29,7 +29,7 @@ const projectFour = new Project("https://vcntech-123.github.io/Country-Searcher/
     "assets/images/projects/student_management_system.PNG", 
     "https://github.com/VCNtech-123/Country-Searcher",
     "Student Manager", 
-    ["HTML", "CSS", "JavaScript"],
+    ["Java", "Java FX", "Swing"],
     "CRUD-style record manager built with Java UI, focused on structure and maintainability."
     );
 
