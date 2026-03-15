@@ -28,3 +28,21 @@ searchInput.addEventListener('input', () => {
     }) 
 })
 
+//Navigation
+const projectPage = document.querySelector('.project_page');
+const project = document.getElementById('project_btn');
+
+const navs = [projectPage];
+
+const hover = new IntersectionObserver ((navigation) => {
+    navigation.forEach((entry) => {
+        if (entry.target === projectPage) {
+        if (entry.isIntersecting) project.classList.add('active');
+        else projects.classList.remove('active'); }
+    })
+}, {threshold: 0.3})
+
+navs.forEach((cur) => {
+    hover.observe(cur);
+})
+

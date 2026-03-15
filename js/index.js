@@ -21,28 +21,14 @@ console.log(hidden);
 
 //Navigation
 const home = document.getElementById('home_btn');
-const projects = document.getElementById('project_btn');
-const contact = document.getElementById('contact_btn');
 const homePage = document.querySelector('.hero_section');
-const projectPage = document.querySelector('.project_section');
-const contactPage = document.querySelector('.contact_section');
+const navs = [homePage];
 
-const navs = [homePage, projectPage, contactPage];
-const button = [home, projects, contact];
-console.log(button);
 const hover = new IntersectionObserver ((navigation) => {
     navigation.forEach((entry) => {
         if (entry.target === homePage) {
         if (entry.isIntersecting) home.classList.add('active');
         else home.classList.remove('active'); }
-
-        if (entry.target === projectPage) {
-        if (entry.isIntersecting) projects.classList.add('active');
-        else projects.classList.remove('active'); }
-
-        if (entry.target === contactPage) {
-        if (entry.isIntersecting) contact.classList.add('active');
-        else contact.classList.remove('active'); }
     })
 }, {threshold: 0.3})
 
