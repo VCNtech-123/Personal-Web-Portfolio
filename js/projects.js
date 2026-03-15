@@ -29,7 +29,7 @@ searchInput.addEventListener('input', () => {
 })
 
 //Navigation
-const projectPage = document.querySelector('.project_page');
+const projectPage = document.querySelector('.projects_section');
 const project = document.getElementById('project_btn');
 
 const navs = [projectPage];

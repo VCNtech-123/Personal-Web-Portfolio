@@ -21,7 +21,7 @@ console.log(hidden);
 
 //Navigation
 const home = document.getElementById('home_btn');
-const homePage = document.querySelector('.hero_section');
+const homePage = document.querySelector('.home_section');
 const navs = [homePage];
 
 const hover = new IntersectionObserver ((navigation) => {
