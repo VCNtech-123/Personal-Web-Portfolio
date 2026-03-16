@@ -1,4 +1,4 @@
-
+// DOM Manipulation Showcase
 //Show Animation Up when scrolled
 const observer = new IntersectionObserver ((entries) => {
     entries.forEach(entry => {
@@ -37,7 +37,7 @@ navs.forEach((cur) => {
 })
 
 
-//Typing Effect
+//Typing Effect using setInterval
 const heroName = document.getElementById('hero_name');
 const nameAnimation = 'John Francis Vecina';
 heroName.innerHTML = '';
