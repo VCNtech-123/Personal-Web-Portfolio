@@ -250,13 +250,8 @@ nav {
 	width: 38%;
 }
 
-#li_btn {
-	transform: translateY(-2px);
-	/* transform: translateX(4px); */
-}
-
 #em_btn {
-	width: 30%
+	width: 12%;
 }
 
 
@@ -591,6 +586,10 @@ nav {
 	transform: translateY(10px);
 	margin-left: 25rem;
 	width: 140px;
+}
+
+#featured_mobile {
+	display: none;
 }
 
 /* More Projects */
@@ -1026,7 +1025,8 @@ nav {
 	.about_section {
 		flex-direction: column;
 		align-items: flex-start;
-		padding-left: 20px;
+		gap: 10px;
+		padding: 0px 20px;
 		max-width: 100%;
 	}
 
@@ -1039,6 +1039,7 @@ nav {
 	}
 
 	#profile_title {
+		font-size: 15px;
 	}
 
 	#profile_description {
@@ -1055,6 +1056,169 @@ nav {
 		font-size: 17px;
 		font-weight: normal;
 		color: rgba(156, 163, 175, 0.85);
+	}
+
+	/* Demo Reel Section */
+	#demo_tags {
+		align-self: center;
+	}
+
+	#video_description {
+		font-weight: normal;
+		font-size: 18px;
+	}
+
+	/* Skills Section */
+	.skill_section {
+		padding: 0 20px;
+	}
+	#skill_heading {
+		font-size:40px;
+	}
+
+	#contact_description {
+		font-size: 18px;
+	}
+
+	.tags_row {
+		flex-wrap: wrap;
+	}
+
+	#respo_tag, #acc_tag {
+		display:none;
+	}
+
+	.tags_skill {
+		width: 120px;
+		font-size: 12px;
+	}
+
+	.tags_desc {
+		display: none;
+	}
+
+	#vs_tag {
+		width: 150px;
+	}
+
+	#int_tag {
+		width: 160px;
+	}
+
+	/* Project Section */
+	.project_section{
+		padding: 0 20px;
+		margin-bottom: 1rem;
+	}
+
+	#project_heading {
+		font-size: 40px;
+	}
+
+	#view_all a{
+		font-size: 12px;
+	}
+
+	#featured_heading {
+		font-size: 27px;
+	}
+
+	.featured_project {
+		display: none;
+	}
+
+	#featured_mobile{
+		display: flex;
+		width: 100%;
+		margin-bottom: 50px;
+	}
+
+	.project_row {
+		flex-wrap: wrap;
+		margin-bottom: 30px;
+	}
+
+	.project_card {
+		gap: 5px;
+	}
+
+	.featured_tags {
+		min-width: 100%;
+		max-width: 100%;
+		justify-content: center;
+		gap:10px;
+	}
+
+	.more_section {
+		padding: 0;
+	}
+
+	.project_card {
+		width: 90%;
+	}
+
+	.project_btn {
+		width: 25%;
+		font-size: 10px;
+	}
+
+	.project_head {
+		margin: 10px 0 10px 10px;
+		font-size: 20px;
+	}
+
+	.project_divider {
+		align-self: center;
+	}
+
+	.proj_desc {
+		font-size: 14px;
+		margin-right: 1rem;
+	}
+
+	.link {
+		display: none;
+	}
+
+	/* Contact Section */
+	.contact_section {
+		gap: 10px;
+	}
+	.message_main {
+		flex-direction: column;
+	}
+	
+	.touch_links {
+		align-items: flex-start;
+	}
+
+	.touch_section{
+		max-width: 100%;
+	}
+
+	.contact_links {
+		flex-direction: column;
+	}
+
+	.muted_contact {
+		font-size: 16px;
+	}
+
+	.contact_text {
+		font-size: 16px;
+	}
+
+	.contact_heading { 
+		font-size: 40px;
+	}
+
+	.contact_margin {
+		margin-bottom: 50px;
+	}
+
+	.message_section {
+		padding: 2rem 1.5rem;
+		width: 100%;
 	}
 }
 
