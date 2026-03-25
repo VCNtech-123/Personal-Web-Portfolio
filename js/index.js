@@ -23,7 +23,7 @@ console.log(hidden);
 const home = document.getElementById('home_btn');
 const homePage = document.querySelector('.home_section');
 const navs = [homePage];
-
+console.log(homePage);
 const hover = new IntersectionObserver ((navigation) => {
     navigation.forEach((entry) => {
         if (entry.target === homePage) {
@@ -48,5 +48,18 @@ setInterval(() => {
     i++
 }, 150);
 
+
+//Hamburger Icon 
+const hamburgerIcon = document.querySelector('.hamburger_icon');
+const hamburgerMenu = document.querySelector('.hamburger_menu'); 
+const hamburgerLine = document.querySelectorAll('.hamburger_line');
+console.log(hamburgerLine);
+
+hamburgerIcon.addEventListener('click', () => {
+    hamburgerMenu.classList.toggle('hm_active');
+    hamburgerLine[0].classList.toggle('line_one');
+    hamburgerLine[1].classList.toggle('line_two');
+    hamburgerLine[2].classList.toggle('line_three');
+});
 
 

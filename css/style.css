@@ -251,7 +251,7 @@ nav {
 }
 
 #em_btn {
-	width: 12%;
+	width: 11%;
 }
 
 
@@ -953,6 +953,7 @@ nav {
 /* Mobile View */
 .hamburger_icon {
 	display: none;
+	transform: translateX(-15px);
 }
 
 .hamburger_line {
@@ -961,7 +962,10 @@ nav {
 	background-color: rgba(243, 244, 246, 1);
 	margin: 6px 0;
 	transition: 0.4s;
-	transform: translateX(-15px);
+}
+
+.hamburger_menu {
+	display: none;
 }
 
 @media (max-width: 600px) {
@@ -980,6 +984,57 @@ nav {
 	.hamburger_icon {
 		display: block;
 	}
+
+	.hamburger_menu {
+		position: fixed;
+		width: 100%;
+		min-height: calc(100vh - 64px);
+		top: 64px;
+		right: -100%;
+
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		background-color:rgba(0, 0, 0, 0.95);
+		font-size: 25px;
+		font-weight: 400;
+		letter-spacing: 3px;
+		transition: all 0.3s ease-in-out;
+	}
+
+	.hamburger_menu.hm_active{
+		right: 0;
+		z-index: 999;
+	}
+
+	.menu_list{
+		display: flex;
+		flex-direction: column;
+		gap: 10px;
+	}
+
+	.menu_list a{
+		display: flex;
+		flex-direction: column;
+		gap: 10px;
+		width: 100%;
+		transition: color 0.3s ease-in-out;
+	}
+
+	.line_one {
+		transform: translateY(1px) rotate(45deg);
+		margin: 0;
+	}
+
+	.line_two {
+		display: none;
+	}
+
+	.line_three {
+		transform: translateY(-2px) rotate(-45deg);
+		margin: 0;
+	}
+
 
 	/* Hero Section */
 	.hero_section {
@@ -1183,8 +1238,14 @@ nav {
 	/* Contact Section */
 	.contact_section {
 		gap: 10px;
+
 	}
-	.message_main {
+	
+	#contact_heading{
+		font-size: 40px;
+	}
+
+	.message_main { 
 		flex-direction: column;
 	}
 	
@@ -1219,6 +1280,15 @@ nav {
 	.message_section {
 		padding: 2rem 1.5rem;
 		width: 100%;
+	}
+
+	/* Project Page */
+	#search_input {
+		width: 90%;
+	}
+
+	.btn_js {
+		margin: 0;
 	}
 }
 

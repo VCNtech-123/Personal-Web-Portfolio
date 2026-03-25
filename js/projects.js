@@ -1,11 +1,26 @@
 import { projects } from "./ProjectData.js";   
 
+
+//Hamburger Icon 
+const hamburgerIcon = document.querySelector('.hamburger_icon');
+const hamburgerMenu = document.querySelector('.hamburger_menu'); 
+const hamburgerLine = document.querySelectorAll('.hamburger_line');
+console.log(hamburgerLine);
+
+hamburgerIcon.addEventListener('click', () => {
+    hamburgerMenu.classList.toggle('hm_active');
+    hamburgerLine[0].classList.toggle('line_one');
+    hamburgerLine[1].classList.toggle('line_two');
+    hamburgerLine[2].classList.toggle('line_three');
+});
+
 //Will show the project cards using loop and OOP concepts.
 const projectFlex = document.querySelector('.project_page_column');
 
 projects.forEach((project) => {
     const proj = document.createElement('div');
     proj.classList.add('project_column');
+    proj.classList.add('project_card');
 
     proj.innerHTML = project.getProjectCard();
     console.log(proj);
