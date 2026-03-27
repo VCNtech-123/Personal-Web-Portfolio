@@ -1,4 +1,4 @@
-import { projects } from "./ProjectData.js";   
+import { projects } from "../data/ProjectData.js";   
 
 
 //Hamburger Icon 

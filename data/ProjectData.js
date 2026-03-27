@@ -1,5 +1,5 @@
 
-import {Project} from "./Project.js";
+import {Project} from "../utils/Project.js";
 
 const html = `assets/svg/html-5.svg`;
 const css = `assets/svg/css-3.svg`;
@@ -8,6 +8,14 @@ const bs = `assets/svg/bootstrap.svg`;
 const java = `assets/svg/java.svg`;
    
   export const projects = [
+    new Project(8, "https://vcntech-123.github.io/Expense-Tracker-Application/", 
+        "assets/images/projects/expense_tracker.png", 
+        "https://github.com/VCNtech-123/Expense-Tracker-Application",
+        "Expense Tracker", 
+        [html, css, js],
+        ["HTML", "CSS", "JavaScript"],
+        "Track spending in real-time with this responsive JS dashboard featuring persistent data storage."
+    ),
         new Project(7, "https://vcntech-123.github.io/Weather-API-Application/", 
         "assets/images/projects/weatherapi.PNG", 
         "https://github.com/VCNtech-123/Weather-API-Application",

@@ -647,6 +647,7 @@ nav {
 }
 
 .project_image {
+	aspect-ratio: 16 / 9;
 	width: 100%;
 	height: 80%;
 	object-fit: cover;
@@ -961,7 +962,7 @@ nav {
 	height: 3px;
 	background-color: rgba(243, 244, 246, 1);
 	margin: 6px 0;
-	transition: 0.4s;
+	transition: all 0.1s ease-in-out;
 }
 
 .hamburger_menu {
