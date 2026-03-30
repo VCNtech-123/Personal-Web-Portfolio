@@ -6,15 +6,25 @@ const css = `assets/svg/css-3.svg`;
 const js = `assets/svg/javascript.svg`;
 const bs = `assets/svg/bootstrap.svg`;
 const java = `assets/svg/java.svg`;
+const tailwind = `assets/svg/tailwind.svg`;
+const vite = `assets/svg/vite.svg`;
    
   export const projects = [
+    new Project(9, "https://vcntech-123.github.io/Movie-API-Application/", 
+        "assets/images/projects/movieapi.png", 
+        "https://github.com/VCNtech-123/Movie-API-Application",
+        "Cinescene", 
+        [vite, tailwind, js],
+        ["Vite", "Tailwind", "JavaScript"],
+        "A premium movie search app built with Vite, Tailwind, and the OMDb API. Features a responsive dark UI for a seamless search experience."
+    ),
     new Project(8, "https://vcntech-123.github.io/Expense-Tracker-Application/", 
         "assets/images/projects/expense_tracker.png", 
         "https://github.com/VCNtech-123/Expense-Tracker-Application",
         "Expense Tracker", 
         [html, css, js],
         ["HTML", "CSS", "JavaScript"],
-        "Track spending in real-time with this responsive JS dashboard featuring persistent data storage."
+        "A dynamic financial dashboard for real-time expense tracking, built with responsive JavaScript and local storage for data persistence."
     ),
         new Project(7, "https://vcntech-123.github.io/Weather-API-Application/", 
         "assets/images/projects/weatherapi.PNG", 
@@ -64,14 +74,14 @@ const java = `assets/svg/java.svg`;
         ["Java", "Java FX", "Swing"],
         "CRUD-style record manager built with Java UI, focused on structure and maintainability."
     ), 
-    new Project(5, "https://vcntech-123.github.io/Personal-Web-Portfolio/", 
-    "assets/images/projects/webfolio.PNG", 
-    "https://github.com/VCNtech-123/Personal-Web-Portfolio",
-    "Personal Web Portfolio", 
-    [html, css, js],
-    ["HTML", "CSS", "JavaScript"],
-    "A minimalist tool for searching and exploring comprehensive global country data."
-    )
+        new Project(5, "https://vcntech-123.github.io/Personal-Web-Portfolio/", 
+        "assets/images/projects/webfolio.PNG", 
+        "https://github.com/VCNtech-123/Personal-Web-Portfolio",
+        "Personal Web Portfolio", 
+        [html, css, js],
+        ["HTML", "CSS", "JavaScript"],
+        "A minimalist tool for searching and exploring comprehensive global country data."
+        )
 ];
 
 
