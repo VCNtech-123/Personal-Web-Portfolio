@@ -312,6 +312,7 @@ nav {
 	font-weight: bold;
 	font-size: 18px;
 	line-height: 170%;
+	color: rgba(243,244,246,0.70);
 }
 
 /* Demo Reel Column */
@@ -1101,7 +1102,7 @@ nav {
 		font-size: 14px;
 	} 
 
-	#ghub_btn, #li_btn, #em_btn {
+	#ghub_btn, #li_btn, #gm_btn {
 		height: 22px;
 		width: 100px;
 		font-size: 12px;
