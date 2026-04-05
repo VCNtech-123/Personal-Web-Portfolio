@@ -1,23 +1,30 @@
-# Personal Web Portfolio - V1.0 🚀
+# Personal Portfolio (v1.0)
 
-Welcome to the first version of my personal portfolio! This version focuses on mastering the fundamentals of web development through a clean, responsive, and interactive design.
+![HTML5](https://shields.io) ![CSS3](https://shields.io) ![JavaScript](https://shields.io)
 
-## 🛠️ Tech Stack
-- **HTML5** & **CSS3**
-- **JavaScript (ES6)**
-- **GitHub Pages** (Hosting)
+A clean, responsive portfolio built to master the fundamentals of CSS and Vanilla JavaScript. This serves as the initial version of my digital home before I migrate the architecture to React and Tailwind.
 
-## ✨ Key Features
-- **Responsive Design:** Optimized for mobile, tablet, and desktop.
-- **Typed Hero Section:** Dynamic introduction using [typed.js] or custom JS.
-- **Project Showcase:** Highlights my recent work with direct links to live demos and source code.
-- **Smooth Navigation:** Snappy transitions and scroll-to-top functionality.
-
-## 🚧 What's Next? (V2.0 Goals)
-This is just the beginning. My next major update will involve rebuilding this from the ground up using:
-- **React.js** for component-based architecture.
-- **Vite** for a blazing-fast development environment.
-- **Tailwind CSS** for modern, utility-first styling.
+🔗 **Live Demo:** [https://github.io]([https://github.io](https://vcntech-123.github.io/Personal-Web-Portfolio/))
 
 ---
-*Created with ❤️ by John Francis Vecina*
+
+### Core Features
+*   **Dynamic UI:** Interactive hero section with a custom typing effect.
+*   **Project Gallery:** Highlighting my recent builds with direct access to source code and live previews.
+*   **Responsive Layout:** Designed with a mobile-first approach for seamless browsing across devices.
+*   **Optimized Performance:** Minimal dependencies for fast load times on GitHub Pages.
+
+### Technical Stack
+*   **Language:** JavaScript (ES6+)
+*   **Styling:** CSS3 (Flexbox/Grid)
+*   **Markup:** HTML5
+*   **Deployment:** GitHub Pages
+
+### Roadmap (Next Version)
+I am currently learning React and Vite. The next iteration of this site will include:
+*   **Component-based architecture** for better scalability.
+*   **Tailwind CSS** for a utility-first styling system.
+*   **Framer Motion** for advanced page transitions and animations.
+
+---
+*Maintained by vcntech-123*
