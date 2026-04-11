@@ -727,6 +727,19 @@ nav {
 	width: 7rem;
 }
 
+.project_source {
+	display: flex;
+}
+
+.src_button {
+	display: flex;
+	gap: 30px;
+}
+
+.src_img {
+	width: 10px;
+	object-fit: cover;
+}
 
 /* Contacts Section */
 .contact_section {
