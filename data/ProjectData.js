@@ -8,12 +8,22 @@ const bs = `assets/svg/bootstrap.svg`;
 const java = `assets/svg/java.svg`;
 const tailwind = `assets/svg/tailwind.svg`;
 const vite = `assets/svg/vite.svg`;
+const react = `assets/svg/react.svg`
+const axios = 'assets/svg/axios.svg'
    
   export const projects = [
+    new Project(10, "https://vcntech-123.github.io/Recipe-Finder-App/", 
+        "assets/images/projects/the_daily_plate.png", 
+        "https://github.com/VCNtech-123/Recipe-Finder-App",
+        "DailyPlate", 
+        [react, axios, tailwind],
+        ["React", "Axios", "Tailwind"],
+        "Performance-optimized recipe application built with React and Tailwind, featuring complex state management and a modern high-fidelity UI"
+    ),
     new Project(9, "https://vcntech-123.github.io/Movie-API-Application/", 
         "assets/images/projects/movieapi.png", 
         "https://github.com/VCNtech-123/Movie-API-Application",
-        "Cinescene", 
+        "CineScene", 
         [vite, tailwind, js],
         ["Vite", "Tailwind", "JavaScript"],
         "A premium movie search app built with Vite, Tailwind, and the OMDb API. Features a responsive dark UI for a seamless search experience."
