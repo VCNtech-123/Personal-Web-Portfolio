@@ -15,10 +15,10 @@ const axios = 'assets/svg/axios.svg'
     new Project(10, "https://vcntech-123.github.io/Recipe-Finder-App/", 
         "assets/images/projects/the_daily_plate.png", 
         "https://github.com/VCNtech-123/Recipe-Finder-App",
-        "DailyPlate", 
+        "The Daily Plate", 
         [react, axios, tailwind],
         ["React", "Axios", "Tailwind"],
-        "Performance-optimized recipe application built with React and Tailwind, featuring complex state management and a modern high-fidelity UI"
+        "High-performance React and Tailwind recipe app. Features advanced state management and a modern, high-fidelity UI."
     ),
     new Project(9, "https://vcntech-123.github.io/Movie-API-Application/", 
         "assets/images/projects/movieapi.png", 
@@ -50,7 +50,7 @@ const axios = 'assets/svg/axios.svg'
         "Leaderboard Application", 
         [html, css, js],
         ["HTML", "CSS", "JavaScript"],
-        "A responsive CRUD dashboard featuring real-time score adjustments (+5/-5), automated timestamping, and entry management."
+        "Responsive CRUD dashboard with real-time score tracking and automated timestamping for seamless entry management."
     ),
         new Project(1, "https://vcntech-123.github.io/Origami/", 
         "assets/images/projects/origami.png", 
