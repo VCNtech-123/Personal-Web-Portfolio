@@ -26,7 +26,7 @@ const axios = 'assets/svg/axios.svg'
         "CineScene", 
         [vite, tailwind, js],
         ["Vite", "Tailwind", "JavaScript"],
-        "A premium movie search app built with Vite, Tailwind, and the OMDb API. Features a responsive dark UI for a seamless search experience."
+        "A premium movie search app built with Vite and Tailwind CSS. Features a responsive dark UI and real-time OMDb API integration."
     ),
     new Project(8, "https://vcntech-123.github.io/Expense-Tracker-Application/", 
         "assets/images/projects/expense_tracker.png", 

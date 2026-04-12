@@ -567,6 +567,8 @@ nav {
 .featured_tags {
 	display: flex;
 	gap: 10px;
+	padding-left: 0;
+    margin-left: 0
 }
 
 .featured_btn{
@@ -619,6 +621,7 @@ nav {
 
 .project_section{
 	display: flex;
+	
 }
 
 #project_heading {
@@ -627,27 +630,35 @@ nav {
 
 #more_header {
 	font-size: 30px;
-	margin-bottom: 1rem;
+	margin-bottom: 2rem;
 }
 
 .more_section {
 	gap: 1rem;
 }
 
-.project_row {
+.project_container {
 	display: flex;
-	justify-content: center;
+	flex-wrap: wrap;
 	gap: 1rem;
+
+	position: relative;
+    background-color: #000; 
+    z-index: 1;
 }
 
 .project_card {
-	flex: 1;
-	width: 80%;
-	background-color: rgba(15, 22, 33, 1.0);
+	flex: 0 1 calc(50% - 1rem);
+	background: radial-gradient(
+        circle at 20% 20%, 
+        rgba(99, 102, 241, 0.18) 0%, 
+        rgba(255, 255, 255, 0.02) 50%, 
+        rgba(0, 0, 0, 0.2) 100%
+    );
 	border-radius: 10px;
-	border-style: solid;
-	border-width: 1px;
-	border-color: rgba(36, 48, 65, 1.0);
+	border: 1px solid rgba(255, 255, 255, 0.1);
+	-webkit-backdrop-filter: blur(10px);
+	backdrop-filter: blur(10px);
 
 	display: flex;
 	flex-direction: column;
@@ -655,6 +666,7 @@ nav {
 	align-items: flex-start;
 	gap: 10px;
 	position: relative;
+	overflow: hidden;
 	
 	transition: all 0.3s ease-in-out;
 }

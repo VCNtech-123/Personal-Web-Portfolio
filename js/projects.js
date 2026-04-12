@@ -15,11 +15,10 @@ hamburgerIcon.addEventListener('click', () => {
 });
 
 //Will show the project cards using loop and OOP concepts.
-const projectFlex = document.querySelector('.project_page_column');
+const projectFlex = document.querySelector('.project_container');
 
 projects.forEach((project) => {
     const proj = document.createElement('div');
-    proj.classList.add('project_column');
     proj.classList.add('project_card');
 
     proj.innerHTML = project.getProjectCard();
