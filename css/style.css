@@ -965,12 +965,6 @@ nav {
   	background: rgba(18, 28, 42, 1)
 }
 
-.project_column > a {
-    display: contents; 
-    text-decoration: none;
-    color: inherit;
-}
-
 .get_btn {
 	width: 115px;
 }
@@ -1259,6 +1253,7 @@ nav {
 
 	.project_card {
 		gap: 5px;
+		width: 85%;
 	}
 
 	.featured_tags {
@@ -1273,7 +1268,7 @@ nav {
 	}
 
 	.project_card {
-		width: 90%;
+		width: 80%;
 	}
 
 	.project_btn {
@@ -1297,6 +1292,10 @@ nav {
 
 	.link {
 		display: none;
+	}
+
+	.project_page_column {
+		padding: 0 20px;
 	}
 
 	/* Contact Section */
