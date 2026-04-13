@@ -33,14 +33,18 @@ const searchInput = document.getElementById('search_input');
 searchInput.addEventListener('input', () => {
     const searchTerm = searchInput.value.toLowerCase();
 
-    projectTitle.forEach((title) => {
-        const titleText = title.textContent.toLowerCase();
-        if (titleText.includes(searchTerm)) {
-            title.parentElement.style.display = 'flex';
-        } else {
-            title.parentElement.style.display = 'none';
-        }
-    }) 
+    const searchedProject = projects.filter(proj => proj.title?.toLowerCase().includes(searchTerm.toLowerCase()))
+    projectFlex.innerHTML = '';
+
+    searchedProject.forEach((project) => {
+    const proj = document.createElement('div');
+    proj.classList.add('project_card');
+
+    proj.innerHTML = project.getProjectCard();
+    console.log(proj);
+    projectFlex.appendChild(proj);
+})
+    
 })
 
 //Navigation
