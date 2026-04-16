@@ -27,7 +27,6 @@ projects.forEach((project) => {
 })
 
 // My Search Function
-const projectTitle = document.querySelectorAll('.project_head');
 const searchInput = document.getElementById('search_input');
 
 searchInput.addEventListener('input', () => {
@@ -36,7 +35,7 @@ searchInput.addEventListener('input', () => {
     const searchedProject = projects.filter(proj => proj.title?.toLowerCase().includes(searchTerm.toLowerCase()))
     projectFlex.innerHTML = '';
 
-    searchedProject.forEach((project) => {
+    searchedProject.forEach((project) => {  
     const proj = document.createElement('div');
     proj.classList.add('project_card');
 
