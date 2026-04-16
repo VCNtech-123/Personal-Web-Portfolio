@@ -213,19 +213,25 @@ nav {
 .tags_btn{
 	width: 8rem;
 	height: 2.5rem;
-	background-color: rgba(15, 22, 33, 1.0);
-	color: rgba(243, 244, 246, 1.0);
+
 	font-family: 'Inter', sans-serif;
 	padding: 1rem 2rem;
 	text-decoration: none;
 	font-size: 14px;
 	cursor: pointer;
 
-	border: none;
-	border-radius: 8px;
-	border-style: solid;
-	border-color: rgba(44, 44, 44, 1.0);
-	border-width: 1px; 
+	background: radial-gradient(
+        circle at top left, 
+        rgba(255, 255, 255, 0.05) 0%, 
+        rgba(0, 0, 0, 0.2) 100%
+    );
+    
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+    
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 8px;
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
 
 
 	display: flex;
@@ -901,6 +907,18 @@ nav {
     border-radius: 20px;
 	padding: 2rem 3rem;
 	box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
+}
+
+.message_section::before {
+    content: "";
+    position: absolute;
+    bottom: -10%;
+    right: -10%;
+    width: 400px;
+    height: 400px;
+    background: radial-gradient(circle, rgba(99, 102, 241, 0.15) 0%, transparent 70%);
+    filter: blur(100px);
+    z-index: -1;
 }
 
 #message_header {
