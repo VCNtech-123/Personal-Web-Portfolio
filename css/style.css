@@ -502,13 +502,29 @@ nav {
 .skill_flex {
 	display: flex;
 	flex-direction: column;
+	flex: 1 1 0;
 	gap: 15px;
+}
+
+.tech_stack_section {
+	display: flex;
+	gap: 50px;
+}
+
+.tags_row {
+	flex-wrap: wrap;
 }
 
 .skill_type {
 	display: flex;
 	align-items: center;
 	color: rgba(156, 162, 175, 1);
+}
+
+.skill_divider {
+	height: 1px;
+	background-color:#22c55e;
+	margin-bottom: 20px;
 }
 
 .tags_skill {
