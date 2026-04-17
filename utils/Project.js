@@ -1,7 +1,7 @@
 
 export class Project {
 
-    constructor(id, gitUrl, imgUrl, gitCode, title, tagSvg, tags, description) {
+    constructor(id, gitUrl, imgUrl, gitCode, title, tagSvg, tags, description, brand) {
         this.id = id;
         this.gitUrl = gitUrl;
         this.imgUrl = imgUrl;
@@ -10,6 +10,7 @@ export class Project {
         this.tagSvg = tagSvg;
         this.tags = tags;
         this.description = description;
+        this.brand = brand;
     }
 
     getProjectCard() {
@@ -17,7 +18,7 @@ export class Project {
 					<div class="project_contents">
 						<h2 class="project_head">${this.title}</h2>
 						    <div class="featured_tags btn_js">
-							   ${this.tags.map((tag, i) => `<a class="tags_btn tags_skill tag project_btn"><img src="${this.tagSvg[i]}" class="skill_logo" id="li_btn"></img>${tag}</a>`).join('')}
+							   ${this.tags.map((tag, i) => `<a class="tags_btn tags_skill tag project_btn" style="--brand-color:${this.brand[i]};"><img src="${this.tagSvg[i]}" class="skill_logo" id="li_btn"></img>${tag}</a>`).join('')}
 							</div>
 							<div class="project_divider"></div>
 								<p class="proj_desc">${this.description}</p>
