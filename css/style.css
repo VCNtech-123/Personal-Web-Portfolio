@@ -1315,10 +1315,8 @@ nav {
 @media (max-width: 600px) {
 	/* Home Page */
 	main, section{
-    padding-left: 12px;
-    padding-right: 12px;
-	max-width: 100%;
-		}
+		max-width: 100%;
+	}
 
 	/* Navi Section */
 	.navBtn {
@@ -1332,6 +1330,7 @@ nav {
 	.hamburger_menu {
 		position: fixed;
 		width: 100%;
+		max-width: 100%;
 		min-height: calc(100vh - 64px);
 		top: 64px;
 		right: -100%;
@@ -1385,6 +1384,7 @@ nav {
 		min-height: calc(100svh - 65px); 
 		width: 100%;
 		max-width: 100%;
+		padding: 0 20px;
 	}
 
 	#hero_introduction {
@@ -1392,11 +1392,31 @@ nav {
 	}
 
 	#hero_name {
-		font-size: 52px;
+		font-size: 40px;
 	}
 
 	#hero_field, #hero_secondField, #hero_desc {
-		font-size: 20px;
+		font-size: 16px;
+	}
+
+	.identity_divider{
+		margin: 0.5rem 0;
+	}
+
+	.hero_cta {
+		gap: 10px;
+	}
+
+	.hero_tech{
+		gap: 10px;
+	}
+
+	.hero_tech .hero_tags {
+		width: 60px;
+		font-size: 8px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
 	}
 
 	.primary_buttons{
@@ -1471,12 +1491,30 @@ nav {
 	.skill_section {
 		padding: 0 20px;
 	}
+
 	#skill_heading {
-		font-size:40px;
+		font-size:28px;
 	}
 
 	#contact_description {
-		font-size: 18px;
+		font-size: 16px;
+	}
+	
+	.tech_divider {
+		margin: -25px 0;
+	}
+
+	.tech_stack_section {
+		flex-wrap: wrap;
+	}
+
+	.skill_flex {
+		flex: 1 1 100%;
+	}
+
+	.tags_skill.skill_pills {
+		width: calc(50% - 1rem);
+		max-width: 160px;
 	}
 
 	.tags_row {
@@ -1542,10 +1580,13 @@ nav {
 		width: 85%;
 	}
 
-	.featured_tags {
-		min-width: 100%;
+	.project_content {
 		max-width: 100%;
-		justify-content: center;
+		align-items: center;
+	}
+
+	.featured_tags {
+		max-width: 100%;
 		gap:10px;
 	}
 
@@ -1553,8 +1594,12 @@ nav {
 		padding: 0;
 	}
 
+	.project_container {
+		flex-wrap: wrap;
+	}
+
 	.project_card {
-		width: 80%;
+		flex: 1 1 100%;
 	}
 
 	.project_btn {
@@ -1563,7 +1608,6 @@ nav {
 	}
 
 	.project_head {
-		margin: 10px 0 10px 10px;
 		font-size: 20px;
 	}
 
@@ -1573,7 +1617,6 @@ nav {
 
 	.proj_desc {
 		font-size: 14px;
-		margin-right: 1rem;
 	}
 
 	.link {
@@ -1584,10 +1627,14 @@ nav {
 		padding: 0 20px;
 	}
 
+	.project_page {
+		padding: 0 20px;
+	}
+
 	/* Contact Section */
 	.contact_section {
 		gap: 10px;
-
+		padding: 0 20px;
 	}
 	
 	#contact_heading{
