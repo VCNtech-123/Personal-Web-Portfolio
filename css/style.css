@@ -127,7 +127,7 @@ nav {
     position: absolute;
 
     top: 32%;
-    left: 20%;
+    left: 24%;
     transform: translate(-50%, -50%);
     
     width: 30vw; 
@@ -374,7 +374,7 @@ nav {
 	align-items: flex-start;
 	gap: 30px;
 
-	margin-bottom: 8rem;
+	margin-bottom: 10rem;
 }
 
 /* Profile Column */
@@ -503,7 +503,7 @@ nav {
     content: "";
     position: absolute;
 
-    top: 40%;
+    top: 50%;
     left: 35%;
     transform: translate(-50%, -50%);
     
