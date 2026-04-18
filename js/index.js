@@ -63,6 +63,14 @@ hamburgerIcon.addEventListener('click', () => {
 });
 
 //Send Message and Copy Email
+const email = "johnvecina640@gmail.com";
+
+const handleCopyEmail = () => {
+  navigator.clipboard.writeText(email).then(() => {
+    window.alert("The email is copied from clipboard!");
+  });
+};
+
 const emailButton = document.querySelector('#email_button');
 emailButton.addEventListener('click', () => {
     handleCopyEmail();
