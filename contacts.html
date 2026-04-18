@@ -5,7 +5,7 @@
             <title>John Francis Vecina</title>
 
             <meta name="viewport" content="width=device-width, initial-scale=1.0">
-            <link rel="icon" type="image/png" sizes="32x32" href="assets/images/logo/logo.png">
+            <link rel="icon" type="image/png" sizes="32x32" href="assets/images/logo/favicon.png">
             <meta charset="UTF-8">
             <link rel="stylesheet" href="css/style.css">
               
@@ -52,8 +52,8 @@
                                 <h2 class="contact_text">Links:</h2>
                                 <div class="socials contact_links">
                                     <a class="tags_btn" href="https://github.com/VCNtech-123" target="_blank"><img src="assets/images/logo/github.png" class="tags_img" id="gh_btn">GitHub </a>
-                                    <a class="tags_btn" ><img src="assets/images/logo/linkedin.png" class="tags_img" id="li_btn">LinkedIn</a>
-                                    <a class="tags_btn" ><img src="assets/images/logo/email.png" class="tags_img" id="em_btn">Email</a>
+                                    <a class="tags_btn" href="https://www.linkedin.com/in/john-francis-vecina-a76aa63b9/"><img src="assets/images/logo/linkedin.png" class="tags_img" id="li_btn">LinkedIn</a>
+                                    <a class="tags_btn" id="email_button"><img src="assets/images/logo/email.png" class="tags_img" id="em_btn">Email</a>
                                 </div>
                             </div>
                             <h2 class="contact_text">Details:</h2>
@@ -61,14 +61,14 @@
                             <h2 class="contact_text">Availability: <span class="muted_contact">Open to internships/freelance</span></h2>
                             <h2 class="contact_text">Response Time: <span class="muted_contact">24-48 hours</span></h2>
                         </div>
-                        <div class="message_section">
+                        <form class="message_section">
                             <h2 id="message_header">Send a message</h2>
                             <p id="message_description">I usually reply within 24-48 hours</p>
-                            <input class="message_input" id="input_name" placeholder="Name" type="text">
-                            <input class="message_input" id="input_email" placeholder="Email" type="email">
-                            <textarea class="message_input" id="input_message" placeholder="Message"></textarea>
+                            <input name="from_name" class="message_input" id="input_name" placeholder="Name" type="text">
+                            <input name="reply_to" class="message_input" id="input_email" placeholder="Email" type="email">
+                            <textarea name="message" class="message_input" id="input_message" placeholder="Message"></textarea>
                             <button id="send_button">Send message</button>
-                        </div>
+                        </form>
                     </div>
                 </section>
             </main>
@@ -79,6 +79,7 @@
                     <p class="copyright">© 2026 John Francis Vecina. All rights reserved.</p>
                 </section>
 		    </footer>
+            <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
             <script src="js/contacts.js"></script>
         </body>
     </html>

@@ -62,4 +62,35 @@ hamburgerIcon.addEventListener('click', () => {
     hamburgerLine[2].classList.toggle('line_three');
 });
 
+//Send Message and Copy Email
+const emailButton = document.querySelector('#email_button');
+emailButton.addEventListener('click', () => {
+    handleCopyEmail();
+})
+
+const form = document.querySelector('.message_section');
+(() => {
+    emailjs.init("VEcmXvvcOn2ccmGE2"); 
+})();
+
+form.addEventListener('submit', (e) => {
+    e.preventDefault();
+    
+    const btn = document.getElementById('send_button');
+    btn.innerText = 'Sending...';
+
+    emailjs.sendForm('service_bm1wp4z', 'template_5s5ywzh', e.target)
+        .then(() => {
+            window.alert("Message sent successfully!")
+            btn.innerText = 'Message Sent!';
+            btn.style.borderColor = '#22c55e';
+            e.target.reset(); 
+        }, (error) => {
+            btn.innerText = 'Error! Try again.';
+            console.log('FAILED...', error);
+        });
+});
+
+console.log(form)
+
 
