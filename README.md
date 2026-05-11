@@ -27,4 +27,4 @@ I am currently learning React and Vite. The next iteration of this site will inc
 *   **Framer Motion** for advanced page transitions and animations.
 
 --
-*Maintained by John Francis Vecina*
+*Maintained by John Francis Vecina* 
