@@ -2,8 +2,12 @@
 
     <html>
         <head>
+            <script>
+                const base = document.createElement('base');
+                base.href = window.location.hostname.includes('alaalacollections.site') ? '/vecina/' : '/';
+                document.head.appendChild(base);
+            </script>
             <title>John Francis Vecina</title>
-
             <meta name="viewport" content="width=device-width, initial-scale=1.0">
             <link rel="icon" type="image/png" sizes="32x32" href="assets/images/logo/favicon.png">
             <meta charset="UTF-8">
