@@ -19,7 +19,7 @@ A clean, responsive portfolio built to master the fundamentals of CSS and Vanill
 *   **Styling:** CSS3 (Flexbox/Grid)
 *   **Markup:** HTML5
 *   **Deployment:** GitHub Pages
-
+ 
 ### Roadmap (Next Version)
 I am currently learning React and Vite. The next iteration of this site will include:
 *   **Component-based architecture** for better scalability.
